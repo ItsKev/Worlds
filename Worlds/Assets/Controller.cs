@@ -33,7 +33,7 @@ public class Controller : MonoBehaviour {
         {
             objectInHand.gameObject.transform.SetParent(null);
             objectInHand.GetComponent<Rigidbody>().velocity = GetComponent<SteamVR_Behaviour_Pose>().GetVelocity() * 2;
-            //objectInHand.GetComponent<Rigidbody>().useGravity = true;
+            objectInHand = null;
         }
     }
 }
